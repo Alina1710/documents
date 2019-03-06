@@ -1,0 +1,31 @@
+mixin button(options)
+
+  - var text = options.text
+  - var icon = options.icon
+  
+  button.button
+    span.button__body
+      if text
+        span.button__text!= text
+      
+      if icon && icon.name
+            span.button__img
+                +svg-icon({
+                    name: icon.name
+                })
+          
+mixin btn(options)
+
+  - var text = options.text
+  - var icon = options.icon
+  
+  button.button
+    span.button__body
+      if text
+        span.button__text-short!= text
+      
+      if icon && icon.name
+        span.button__img
+            +svg-icon({
+                name: icon.name
+          })

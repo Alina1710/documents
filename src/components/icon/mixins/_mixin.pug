@@ -1,0 +1,5 @@
+mixin svg-icon(options)
+  - var name = options.name
+  
+  svg(class="svg-icon")&attributes(attributes)
+      use(xlink:href="/images/sprite.svg#" + name)

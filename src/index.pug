@@ -1,0 +1,321 @@
+include components/icon/mixins/_mixin.pug
+include components/buttons/mixins/mixin.pug
+doctype html
+html(lang="en-us")
+    head
+        meta(charset="UTF-8")
+        title Title page
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet")
+        link(rel="stylesheet", href="css/styles/main/main.css")
+    body
+        .layout
+            aside.sidebar
+                .sidebar__inner
+            main.documents
+                .documents__inner
+                        h1 Add at least one document to your flow
+                        ul.doc-list
+                            li.doc-list__item
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        }) 
+                                    .doc__doc-img
+                                        +svg-icon({
+                                            name: "big"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5 Simple document
+                                        span.doc__description 10 pages / No fillable fields
+                                        .doc__edition-img
+                                            +svg-icon({
+                                                name: "change"
+                                            }) 
+                                    .doc__actions
+                                        .doc__btn
+                                             +button({
+                                                text: "Add fillable fields", 
+                                             })
+                                        .doc__btn-delete
+                                            +button({
+                                                icon:{
+                                                    name: "delete"
+                                                }
+                                            })
+                            li.doc-list__item                                  
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        })   
+                                    .doc__doc-img
+                                        +svg-icon({
+                                            name: "big"
+                                        }) 
+                                    .doc__doc-mark
+                                        +svg-icon({
+                                            name: "fillable-mark"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5 Fillable fields
+                                            form.doc__form
+                                                input.doc__input(type="text" value="2. Fillable fields")
+                                        span.doc__specifacation 1 page / 2 fillable fields
+                                    .doc__actions
+                                        .doc__btn
+                                            +button({
+                                                text: "Edit fillable fields", 
+                                            })
+                                        .doc__btn-delete
+                                            +button({
+                                                icon:{
+                                                    name: "delete"
+                                                }
+                                            })
+                            li.doc-list__item
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        })    
+                                    .doc__doc-img
+                                        +svg-icon({
+                                            name: "big"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5 Created document
+                                        span.doc__description 4 pages / 2 fillable fields
+                                        .doc__edition-img
+                                            +svg-icon({
+                                                name: "change"
+                                            }) 
+                                    .doc__actions
+                                        .doc__btn
+                                            +button({
+                                                text: "Add fillable fields", 
+                                            }) 
+                                        .doc__btn-delete
+                                            +button({
+                                                icon:{
+                                                    name: "delete"
+                                                }
+                                            })
+                            li.doc-list__item
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        })     
+                                    .doc__doc-img
+                                        +svg-icon({
+                                            name: "form"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5 airSlate Form
+                                        span.doc__description 10 questions
+                                        .doc__edition-img
+                                            +svg-icon({
+                                                name: "change"
+                                            }) 
+                                    .doc__actions
+                                        .doc__btn
+                                            +button({
+                                                text: "Edit form settings", 
+                                            })
+                                        .doc__btn-delete
+                                            +button({
+                                                icon:{
+                                                    name: "delete"
+                                                }
+                                            })
+                            li.doc-list__item
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        })     
+                                    .doc__doc-img
+                                        +svg-icon({
+                                            name: "generate-document"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5 Generated document
+                                        span.doc__description 2 pages / 12 tags used
+                                        .doc__edition-img
+                                            +svg-icon({
+                                                name: "change"
+                                            }) 
+                                    .doc__actions
+                                        .doc__btn
+                                            +btn({
+                                                text: "Edit settings", 
+                                            })
+                                        .doc__btn-delete
+                                            +button({
+                                                icon:{
+                                                    name: "delete"
+                                                }
+                                            })
+                            li.doc-list__item
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        })     
+                                    .doc__doc-img
+                                        +svg-icon({
+                                            name: "autentication"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5.doc__headline User Authentication
+                                        .doc__img-change
+                                            +svg-icon({
+                                                name: "change"
+                                            }) 
+                                    .doc__actions
+                                        .doc__btn
+                                            +btn({
+                                                text: "Edit settings", 
+                                            })
+                                        .doc__btn-delete
+                                            +button({
+                                                icon:{
+                                                    name: "delete"
+                                                }
+                                            })
+                            li.doc-list__item
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        })     
+                                    .doc__doc-img
+                                        +svg-icon({
+                                            name: "payment"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5.doc__headline Payment order form
+                                        .doc__img-change
+                                            +svg-icon({
+                                                name: "change"
+                                            }) 
+                                    .doc__actions
+                                        .doc__btn
+                                            +btn({
+                                                text: "Edit settings", 
+                                            })
+                                        .doc__btn-delete
+                                            +button({
+                                                icon:{
+                                                    name: "delete"
+                                                }
+                                            })
+                            li.doc-list__item
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        })     
+                                    .doc__doc-img
+                                        +svg-icon({
+                                            name: "attachment"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5.doc__headline Attachment request
+                                        .doc__img-change
+                                            +svg-icon({
+                                                name: "change"
+                                            }) 
+                                    .doc__actions
+                                        .doc__btn
+                                            +btn({
+                                                text: "Edit settings", 
+                                            })
+                                        .doc__btn-delete
+                                            +button({
+                                                icon:{
+                                                    name: "delete"
+                                                }
+                                            })
+                            li.doc-list__item
+                                .doc
+                                    .doc__img
+                                        +svg-icon({
+                                            name: "drag"
+                                        })     
+                                    .doc__doc-img
+                                        +svg-icon({
+                                        name: "big2"
+                                        }) 
+                                    .doc__details
+                                        .doc__tittle
+                                            h5.doc__head Document name
+                                        span.doc__description Uploading...
+                                        .doc__edition-img
+                                            +svg-icon({
+                                                name: "change"
+                                            }) 
+                                    .doc__download
+                                        .doc__download-img
+                                            +svg-icon({
+                                                name: "small"
+                                            }) 
+                            li.doc-list__item
+                                .delete
+                                    .delete__tittle
+                                        h6 Delete from list
+                                        span.delete__description Are you sure you want to delete the following document?
+                                    .delete__btn
+                                        button.delete-button
+                                            .delete-button__body
+                                                .delete-button__text No
+                                    .delete__btn
+                                        button.delete-button
+                                            .delete-button__body
+                                                .delete-button__text Yes
+                            li.doc-list__item
+                                .upload
+                                    .upload__img
+                                        +svg-icon({
+                                            name: "upload-document"
+                                        }) 
+                                    h7 No documents
+                            li.doc-list__item
+                                .add-btn
+                                    .add-btn__button
+                                        button.add-button
+                                            .add-button__body
+                                                .add-button__img
+                                                    +svg-icon({
+                                                        name: "add"
+                                                    }) 
+                                                .add-button__text Add New
+                                                          
+                                
+                             
+                             
+                             
+                          
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                        

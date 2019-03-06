@@ -1,0 +1,97 @@
+@import "../../styles/helpers/variables";
+
+@mixin font ($font-weight, $font-size, $line-height, $letter-spacing, $color, $font-family) {
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $color;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    font-family: $font-family;
+}
+button{
+    border: none;
+    background-color: $white-col;
+    text-align: center;
+    outline: 0;
+}
+.doc__actions{
+    display: flex;
+    position: absolute;
+    left: 368px;
+    align-items: center;
+}
+.doc__btn{
+    display: flex;
+    align-items: center;
+    width: 136px;
+    height: 32px;
+    border-radius: 4px;
+    border: solid 1px $orange-col;
+    background-color: $white-col;
+    margin-right: 8px;
+}
+.button__body{
+    display: flex;
+    align-items: center;
+}
+.button__text{
+    @include font ($font-weight, $font-sm, 1.33, 0.3px, $dark-col, $font-family)
+    margin-left: 8px;
+}
+.doc__btn-delete{
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+.doc__btn-delete:hover{
+    border: solid 1px $orange-col;  
+}
+.button__text-short{
+    @include font ($font-weight, $font-sm, 1.33, 0.3px, $dark-col, $font-family)
+    margin-left: 25px;
+}
+.delete-button{
+    width: 64px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #e9e9e9;
+    margin-right: 8px;
+}
+.delete-button__text{
+    @include font ($font-weight, $font-sm, 1.33, 0.3px, $dark-col, $font-family)   
+}
+.delete-button:hover{
+    background-color: $orange-col;
+}
+.delete-button:hover .delete-button__text{
+    color: $white-col;
+}
+.add-button{
+    width: 538px;
+    height: 32px;
+    border-radius: 4px;
+    border: dashed 1px #aaaaaa;
+    background-color: $white-col;
+    margin-left: 16px;
+}
+.add-button__body{
+    display: flex;
+    align-items: center;
+    margin-left: 230px;
+}
+.add-button__text{
+    @include font ($font-weight, $font-sm, 1.33, 0.3px, $dark-col, $font-family)     
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
